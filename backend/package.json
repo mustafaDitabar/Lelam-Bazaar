@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^41.4.2",
+    "@ckeditor/ckeditor5-react": "^9.5.0",
+    "@react-oauth/google": "^0.12.1",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "dompurify": "^3.2.6",
+    "dotenv": "^16.5.0",
+    "express": "^4.18.1",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment-jalaali": "^0.10.4",
+    "mongoose": "^6.13.8",
+    "multer": "^2.0.0",
+    "nodemailer": "^6.10.1",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "socket.io": "^4.8.1",
+    "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "daisyui": "^5.0.35",
+    "nodemon": "^2.0.19"
+  }
+}

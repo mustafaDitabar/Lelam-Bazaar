@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+ 
+
+
+@layer components{
+  .bgBlueGradient{
+    @apply bg-gradient-to-bl from-cyan-400 to-blue-500;
+  }
+
+  .textInput{
+    @apply  ring-0 p-2 focus:ring-1  w-[300px] h-[30px] focus:outline-none focus:ring-blue-300  bg-gray-100  rounded-md placeholder:text-gray-400 text-gray-500;
+  }
+.errMsg{
+
+@apply text-red-400 text-sm pr-3 pt-1 font-medium ;
+
+
+}
+
+.cynBtn{
+
+
+  @apply bg-blue-400  pr-3 transition-all text-gray-50 text-lg mb-2   w-[300px] h-[30px] font-bold rounded-md hover:bg-blue-500;
+
+}
+
+
+
+}
+
+/* جدید */
+
+
+
+/* body {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+} */
+
+/* dark mode looking scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #555;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #121212;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #242424;
+}
+
+/* SHAKE ANIMATION ON HORIZONTAL DIRECTION */
+.shake {
+	animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.2s both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+
+/* ismat */
+
+/* @import "tailwindcss"; */
+a.active hr{
+    display: block;
+}
+
+/* *{
+    font-family:outfit;
+} */
+@font-face {
+  font-family: 'Tracfick';
+  src: url('./fonts/Terafik Regular.ttf') format('truetype'),
+       url('./fonts/Terafik Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Tracfick', sans-serif;
+}
+
+
+
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @media(max-width:640px){
+    a.active{
+        background-color: rgb(62, 110, 241);
+        color: white;
+    }
+  }
+  @layer utilities {
+    .rtl {
+      direction: rtl;
+    }
+  
+    .ltr {
+      direction: ltr;
+    }
+  }
+
+
+
+
+html, body {
+  
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: thin;    /* Firefox */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Chrome, Edge, Safari */
+
+html, body {
+  scrollbar-width: thin;  /* Firefox */
+  scrollbar-color: rgba(160, 160, 160, 0.4) transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 1px; /* حالت عادی */
+  transition: width 0.2s ease-in-out;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(187, 186, 186, 0.4);
+  border-radius: 10px;
+  transition: background 0.2s ease-in-out;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar:hover {
+  width: 4px; /* وقتی کاربر روی اسکرول‌بار هاور کنه */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(220, 212, 212, 0.6);
+}
+
+
+
+  .hero, .latest-collection, .best-seller {
+    height: 100vh; /* پوشش دادن تمام صفحه */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero h1, .latest-collection h1, .best-seller h1 {
+    color: white;
+    text-align: center;
+  }
+  .custom-ckeditor-container .ck.ck-editor {
+  width: 99% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+.custom-ckeditor-container .ck-editor__editable {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+/* اسکرول نازک با Tailwind */
+.scrollbar-thin-custom{
+  scrollbar-width: thin;  /* Firefox */
+  scrollbar-color: rgba(160, 160, 160, 0.4) transparent;
+}
+  
+
+.scrollbar-thin-custom::-webkit-scrollbar {
+  width: 1px;
+  transition: width 0.2s ease-in-out;
+}
+.scrollbar-thin-custom::-webkit-scrollbar-track {
+   background: transparent;
+  background: #f1f1f1;
+}
+.scrollbar-thin-custom::-webkit-scrollbar-thumb {
+   background: rgba(187, 186, 186, 0.4);
+  border-radius: 10px;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  @apply bg-white text-black dark:bg-black dark:text-white;
+}
