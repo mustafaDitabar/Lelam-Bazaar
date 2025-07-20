@@ -52,6 +52,15 @@ app.use("/auth", GoogleAuth);
 app.use("/auth", require("./routes/api/auth"));
 app.use("/register", require("./routes/api/register.js"));
 
+app.get("/", (req, res) => {
+  res.send("Lelam Bazaar Server is running ✅");
+});
+app.use(express.static(path.join(__dirname, "client/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
+
+
 
 app.use("/api/messages", require("./routes/message.routes.js" ));
 app.use("/api/users", require("./routes/user.routes.js"));
