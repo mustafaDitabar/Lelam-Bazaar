@@ -22,9 +22,6 @@ app.use(cookieParser());
 app.use(credentials);
 app.use(cors(corsOptions));
 
-
-
-
 app.use(session({
   name: "session",
   secret: "cyberwolve",

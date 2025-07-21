@@ -1,6 +1,6 @@
 import axios from 'axios';
 
- export const BASE_URL ="https://lelam-bazaar-app-8790.onrender.com";
+ export const BASE_URL ="https://lelam-bazaar-app-utzy.onrender.com/";
 
  export default   axios.create({
 
